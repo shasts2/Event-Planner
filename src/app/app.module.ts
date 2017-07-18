@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { EventBirthdayModule } from './event-birthday/event-birthday.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    EventBirthdayModule
   ],
   providers: [],
   bootstrap: [AppComponent]
