@@ -1,15 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { EventBirthdayModule } from './event-birthday/event-birthday.module';
+import { HomeComponent } from './home/home.component';
+import { EventBirthdayComponent } from './event-birthday/event-birthday.component';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app.routes';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    EventBirthdayComponent
   ],
   imports: [
     BrowserModule,
-    EventBirthdayModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
